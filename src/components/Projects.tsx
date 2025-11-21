@@ -17,19 +17,13 @@ const Projects = () => {
     {
       title: "Blog Website + Dashboard System",
       description: "Full-featured blogging platform with admin dashboard for content management, user authentication, and rich text editing capabilities.",
-      tech: ["React", "Node.js", "MongoDB", "TailwindCSS"],
+      tech: ["HTML", "php", "xampp", "Css"],
       image: "gradient-accent",
     },
     {
       title: "Kuber – Finance Management UI",
       description: "Modern finance and investment management interface with dashboard analytics, portfolio tracking, and data visualization.",
-      tech: ["React", "TailwindCSS", "Chart.js"],
-      image: "gradient-primary",
-    },
-    {
-      title: "Restaurant Booking & Management System",
-      description: "Complete restaurant management solution with table reservations, menu management, and order tracking system.",
-      tech: ["React", "Express", "MySQL", "Bootstrap"],
+      tech: ["React", "TailwindCSS", "Chart.js", "Node.js","Mongo DB"," Express"],
       image: "gradient-primary",
     },
     {
