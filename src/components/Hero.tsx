@@ -1,8 +1,39 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { Github, Linkedin, Instagram, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 import { useTyping } from "@/hooks/use-typing";
+
+// Avatar component that can render small (default) or full-size (fills parent container)
+type AvatarProps = { full?: boolean };
+const Avatar: React.FC<AvatarProps> = ({ full = false }) => {
+  const [errored, setErrored] = useState(false);
+
+  // container classes differ depending on full mode
+  const containerClass = full
+    ? "absolute inset-0 rounded-full overflow-hidden"
+    : "w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-primary/20 relative";
+
+  const fallbackClass = full ? "absolute inset-0 flex items-center justify-center bg-primary/10" : "w-full h-full flex items-center justify-center bg-primary/10";
+
+  return (
+    <div className={containerClass}>
+      {!errored ? (
+        <img
+          src="/profileImage.png"
+          alt="Abhishek Singhania"
+          className={full ? "w-full h-full object-cover block bg-gradient-to-br from-primary/20 to-accent/20" : "w-full h-full object-cover block"}
+          onError={() => setErrored(true)}
+        />
+      ) : (
+        <div className={fallbackClass}>
+          <span className="text-6xl gradient-text font-bold">AS</span>
+        </div>
+      )}
+    </div>
+  );
+};
 
 const Hero = () => {
   const typingText = useTyping([
@@ -94,6 +125,7 @@ const Hero = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={social.label}
                   className="p-3 glass-card rounded-full hover:scale-110 transition-transform glow-effect-accent"
                 >
                   <social.icon size={24} className="text-accent" />
@@ -112,15 +144,12 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full blur-3xl opacity-30 animate-glow" />
               <div className="relative w-72 h-72 md:w-96 md:h-96 glass-card rounded-full overflow-hidden border-4 border-primary/30 animate-float">
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <div className="w-32 h-32 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
-                      <span className="text-6xl gradient-text font-bold">AS</span>
-                    </div>
-                    <p className="text-muted-foreground text-sm px-8">
-                      Upload your profile image here
-                    </p>
-                  </div>
+                {/* Full-size avatar that fills the big circular container */}
+                <Avatar full />
+                <div className="absolute inset-0 w-full h-full flex items-end justify-center pb-8 pointer-events-none">
+                  <p className="text-muted-foreground text-sm px-8 pointer-events-auto">
+                    Full-Stack Developer
+                  </p>
                 </div>
               </div>
             </div>
