@@ -11,7 +11,7 @@ const Education = () => {
     {
       year: "2022 - 2027",
       title: "Bachelor of Technology - CSE",
-      institution: "Computer Science & Engineering",
+      institution: "Gandhi Institute of Engineering and Technology University, Odisha, Gunupur",
       description: "Currently pursuing B.Tech in Computer Science & Engineering with focus on full-stack development and software engineering principles. 3rd Year Student.",
       icon: GraduationCap,
     },

@@ -12,9 +12,7 @@ const Footer = () => {
           className="text-center"
         >
           <p className="text-muted-foreground flex items-center justify-center gap-2">
-            © 2025 Abhishek Singhania. Built with
-            <Heart size={16} className="text-accent animate-pulse" />
-            and React
+            © 2025 Abhishek Singhania 
           </p>
         </motion.div>
       </div>
