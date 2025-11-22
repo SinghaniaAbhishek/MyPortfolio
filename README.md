@@ -3,7 +3,7 @@
 	Redesigned for clarity and quick setup
 -->
 
-# Abhishek Singhania — Digital Canvas
+# Abhishek Singhania 
 
 A personal portfolio built with Vite, React, TypeScript and Tailwind CSS showcasing projects, skills, education and contact details.
 
@@ -79,12 +79,3 @@ Contributions are welcome. If you'd like to suggest improvements or submit chang
 - Email: abhisheksinghania613@gmail.com
 - GitHub: https://github.com/SinghaniaAbhishek
 
----
-
-If you'd like, I can also:
-
-- Add a screenshot or demo GIF to the README
-- Generate a one-click deploy badge (Vercel / Netlify)
-- Create a small CONTRIBUTING.md and license file
-
-Replace placeholders (live demo URL, email) with your actual info and I'll update the README again.
