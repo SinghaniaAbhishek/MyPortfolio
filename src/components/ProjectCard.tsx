@@ -9,6 +9,8 @@ interface ProjectCardProps {
     description: string;
     tech: string[];
     image: string;
+    github?: string;
+    liveDemo?: string;
   };
   index: number;
   isInView: boolean;
@@ -76,23 +78,40 @@ export const ProjectCard = ({ project, index, isInView }: ProjectCardProps) => {
 
           {/* Action Buttons */}
           <div className="flex gap-3">
-            <Button
-              size="sm"
-              className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
-              style={{ transform: "translateZ(30px)" }}
-            >
-              <ExternalLink size={16} className="mr-2" />
-              Live Demo
-            </Button>
-            <Button
-              size="sm"
-              variant="outline"
-              className="flex-1 border-accent text-accent hover:bg-accent/10"
-              style={{ transform: "translateZ(30px)" }}
-            >
-              <Github size={16} className="mr-2" />
-              GitHub
-            </Button>
+            {project.liveDemo ? (
+              <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="flex-1">
+                <Button
+                  size="sm"
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                  style={{ transform: "translateZ(30px)" }}
+                >
+                  <ExternalLink size={16} className="mr-2" />
+                  Live Demo
+                </Button>
+              </a>
+            ) : (
+              <Button
+                size="sm"
+                className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
+                style={{ transform: "translateZ(30px)" }}
+              >
+                <ExternalLink size={16} className="mr-2" />
+                Live Demo
+              </Button>
+            )}
+            {project.github && (
+              <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1">
+                <Button
+                  size="sm"
+                  variant="outline"
+                  className="w-full border-accent text-accent hover:bg-accent/10"
+                  style={{ transform: "translateZ(30px)" }}
+                >
+                  <Github size={16} className="mr-2" />
+                  GitHub
+                </Button>
+              </a>
+            )}
           </div>
         </div>
       </motion.div>

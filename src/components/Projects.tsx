@@ -13,36 +13,43 @@ const Projects = () => {
       description: "Complete wedding planning platform built with MERN stack, featuring vendor management, booking systems, and event coordination tools.",
       tech: ["React", "Node.js", "MongoDB", "Express"],
       image: "gradient-primary",
+      github: "https://github.com/SinghaniaAbhishek/Swayamvar_MERN",
     },
     {
       title: "Blog Website + Dashboard System",
       description: "Full-featured blogging platform with admin dashboard for content management, user authentication, and rich text editing capabilities.",
       tech: ["HTML", "php", "xampp", "Css"],
       image: "gradient-accent",
+      github: "https://github.com/SinghaniaAbhishek/Blog-Website",
     },
     {
       title: "Kuber – Finance Management UI",
       description: "Modern finance and investment management interface with dashboard analytics, portfolio tracking, and data visualization.",
       tech: ["React", "TailwindCSS", "Chart.js", "Node.js","Mongo DB"," Express"],
       image: "gradient-primary",
+      github: "https://github.com/SinghaniaAbhishek/kuber",
+      liveDemo: "https://v0-kuber-landing-page.vercel.app/",
     },
     {
       title: "SmartLeavePlus – Leave Application System",
       description: "Online leave management system streamlining the leave application process with approval workflows and status tracking.",
       tech: ["JavaScript", "Node.js", "MongoDB", "CSS"],
       image: "gradient-accent",
+      github: "https://github.com/SinghaniaAbhishek/OnlineLeaveApplication",
     },
     {
       title: "Online Food Ordering System",
       description: "Food ordering platform with cart functionality, order management, and payment integration built with PHP and MySQL.",
       tech: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
       image: "gradient-primary",
+      github: "https://github.com/SinghaniaAbhishek/Taste_Transport",
     },
     {
       title: "Vertex CRM",
       description: "Customer Relationship Management system with React frontend and Spring Boot backend for managing customer interactions and data.",
       tech: ["React", "Spring Boot", "Java", "MySQL"],
       image: "gradient-accent",
+      github: "https://github.com/SinghaniaAbhishek/Vertex-CRM",
     },
     
   ];
