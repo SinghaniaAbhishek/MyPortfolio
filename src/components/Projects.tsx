@@ -16,14 +16,14 @@ const Projects = () => {
       github: "https://github.com/SinghaniaAbhishek/Swayamvar_MERN",
     },
     {
-      title: "Blog Website + Dashboard System",
+      title: "MyBlog – Blogging Platform",
       description: "Full-featured blogging platform with admin dashboard for content management, user authentication, and rich text editing capabilities.",
       tech: ["HTML", "php", "xampp", "Css"],
       image: "gradient-accent",
-      github: "https://github.com/SinghaniaAbhishek/Blog-Website",
+      github: "https://github.com/SinghaniaAbhishek/MyBlog",
     },
     {
-      title: "Kuber – Finance Management UI",
+      title: "Kuber - Finance Management UI",
       description: "Modern finance and investment management interface with dashboard analytics, portfolio tracking, and data visualization.",
       tech: ["React", "TailwindCSS", "Chart.js", "Node.js","Mongo DB"," Express"],
       image: "gradient-primary",
