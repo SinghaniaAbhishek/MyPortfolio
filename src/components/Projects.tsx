@@ -28,7 +28,7 @@ const Projects = () => {
       tech: ["React", "TailwindCSS", "Chart.js", "Node.js","Mongo DB"," Express"],
       image: "gradient-primary",
       github: "https://github.com/SinghaniaAbhishek/kuber",
-      liveDemo: "https://v0-kuber-landing-page.vercel.app/",
+      liveDemo: "https://v0-kuber-landing-page.vercel.app",
     },
     {
       title: "SmartLeavePlus – Leave Application System",
@@ -38,7 +38,7 @@ const Projects = () => {
       github: "https://github.com/SinghaniaAbhishek/OnlineLeaveApplication",
     },
     {
-      title: "Online Food Ordering System",
+      title: "Taste Transport",
       description: "Food ordering platform with cart functionality, order management, and payment integration built with PHP and MySQL.",
       tech: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
       image: "gradient-primary",
@@ -47,7 +47,7 @@ const Projects = () => {
     {
       title: "Vertex CRM",
       description: "Customer Relationship Management system with React frontend and Spring Boot backend for managing customer interactions and data.",
-      tech: ["React", "Spring Boot", "Java", "MySQL"],
+      tech: [ "Spring Boot", "Java", "PostgreSQL"],
       image: "gradient-accent",
       github: "https://github.com/SinghaniaAbhishek/Vertex-CRM",
     },

@@ -14,17 +14,17 @@ const Skills = () => {
     },
     {
       category: "Backend",
-      skills: ["Node.js", "Express.js"],
+      skills: ["Node.js", "Express.js", "PHP", "Java", "Spring Boot"],
       gradient: "from-accent to-secondary",
     },
     {
       category: "Databases",
-      skills: ["MongoDB", "MySQL"],
+      skills: ["MongoDB", "MySQL", "PostgreSQL"],
       gradient: "from-secondary to-primary",
     },
     {
       category: "Tools & Others",
-      skills: ["Git", "GitHub", "Postman", "VS Code", "Vercel", "Netlify"],
+      skills: ["Git", "GitHub", "Postman", "VS Code", "Vercel", "Netlify", "EmailJS", "XAMPP"],
       gradient: "from-primary to-secondary",
     },
   ];

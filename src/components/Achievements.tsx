@@ -20,12 +20,6 @@ const Achievements = () => {
       description: "Active member of college tech club, collaborating on innovative projects and staying updated with latest technologies.",
       gradient: "from-accent to-secondary",
     },
-    {
-      icon: Presentation,
-      title: "Major Presentations",
-      description: "Delivered impactful presentations on 'Color Psychology in UI/UX' and 'Blockchain Beyond Cryptocurrency' to technical audiences.",
-      gradient: "from-secondary to-primary",
-    },
   ];
 
   return (
