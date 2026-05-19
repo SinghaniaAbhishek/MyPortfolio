@@ -49,7 +49,7 @@ const Projects = () => {
       description: "Customer Relationship Management system with React frontend and Spring Boot backend for managing customer interactions and data.",
       tech: [ "Spring Boot", "Java", "PostgreSQL"],
       image: "gradient-accent",
-      github: "https://github.com/SinghaniaAbhishek/Vertex-CRM",
+      github: "https://github.com/SinghaniaAbhishek/VertexCrm",
     },
     
   ];

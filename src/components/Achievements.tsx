@@ -1,13 +1,31 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Trophy, Users, Presentation } from "lucide-react";
+import { Trophy, Users, Presentation, Award, Code } from "lucide-react";
 
 const Achievements = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const achievements = [
+    {
+      icon: Trophy,
+      title: "2nd Place - Hacknovation 2026",
+      description: "Secured 2nd place at Hacknovation 2026 competing against 50+ teams in a 36-hour hackathon. Built an innovative solution showcasing full-stack development expertise.",
+      gradient: "from-primary to-accent",
+    },
+    {
+      icon: Award,
+      title: "Top 10 - Smart India Hackathon 2026",
+      description: "Ranked in Top 10 at Smart India Hackathon 2026, demonstrating problem-solving skills and ability to build scalable solutions.",
+      gradient: "from-accent to-secondary",
+    },
+    {
+      icon: Code,
+      title: "100+ LeetCode Problems",
+      description: "Solved over 100 problems on LeetCode, strengthening data structures, algorithms, and competitive programming skills.",
+      gradient: "from-secondary to-primary",
+    },
     {
       icon: Trophy,
       title: "7 Real Projects",
@@ -36,7 +54,7 @@ const Achievements = () => {
           <p className="text-muted-foreground text-lg">Milestones and accomplishments</p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {achievements.map((achievement, index) => (
             <motion.div
               key={achievement.title}

@@ -9,21 +9,21 @@ const Education = () => {
 
   const timeline = [
     {
-      year: "2022 - 2027",
+      year: "2023 - 2027",
       title: "Bachelor of Technology - CSE",
       institution: "Gandhi Institute of Engineering and Technology University, Odisha, Gunupur",
       description: "Currently pursuing B.Tech in Computer Science & Engineering with focus on full-stack development and software engineering principles. Final Year Student.",
       icon: GraduationCap,
     },
     {
-      year: "2020",
+      year: "2021-2023",
       title: "Higher Secondary (12th)",
       institution: "CBSE Board",
       description: "Completed higher secondary education with strong foundation in Mathematics and Science.",
       icon: BookOpen,
     },
     {
-      year: "2018",
+      year: "2018-2021",
       title: "Secondary (10th)",
       institution: "CBSE Board",
       description: "Completed secondary education with excellent academic performance.",
