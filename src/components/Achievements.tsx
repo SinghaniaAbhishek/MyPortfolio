@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Trophy, Users, Presentation, Award, Code } from "lucide-react";
+import { Trophy, Award, Code } from "lucide-react";
 
 const Achievements = () => {
   const ref = useRef(null);
@@ -25,18 +25,6 @@ const Achievements = () => {
       title: "100+ LeetCode Problems",
       description: "Solved over 100 problems on LeetCode, strengthening data structures, algorithms, and competitive programming skills.",
       gradient: "from-secondary to-primary",
-    },
-    {
-      icon: Trophy,
-      title: "7 Real Projects",
-      description: "Successfully built and deployed 7 full-stack applications across various domains including CRM, booking systems, and finance management.",
-      gradient: "from-primary to-accent",
-    },
-    {
-      icon: Users,
-      title: "Tech Club Member",
-      description: "Active member of college tech club, collaborating on innovative projects and staying updated with latest technologies.",
-      gradient: "from-accent to-secondary",
     },
   ];
 
