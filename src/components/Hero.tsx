@@ -76,17 +76,6 @@ const Hero = () => {
                 Abhishek Singhania
               </h1>
               
-              {/* Currently Learning Badge */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.3 }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 mb-4"
-              >
-                <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
-                <span className="text-sm font-medium text-foreground">Open to Internships & Entry-Level Roles</span>
-              </motion.div>
-              
               <h2 className="text-2xl md:text-3xl text-muted-foreground font-light flex items-center gap-2">
                 <span>{typingText}</span>
                 <span className="inline-block w-0.5 h-8 bg-primary animate-pulse" />
@@ -101,6 +90,17 @@ const Hero = () => {
             >
               I build modern, scalable and visually clean web applications.
             </motion.p>
+
+            {/* Currently Learning Badge */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.5 }}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30"
+            >
+              <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+              <span className="text-sm font-medium text-foreground">Open to Internships & Entry-Level Roles</span>
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
