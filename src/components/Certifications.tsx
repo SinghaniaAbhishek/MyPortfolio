@@ -20,6 +20,12 @@ const Certifications = () => {
       description: "In-depth study of DSA concepts, algorithm design, and problem-solving techniques.",
       skills: ["DSA", "Problem Solving", "Algorithms"],
     },
+    {
+      title: "JavaScript",
+      issuer: "Spoken Tutorial – IIT Bombay",
+      description: "Comprehensive JavaScript training covering fundamentals, DOM manipulation, ES6+, and modern web development practices.",
+      skills: ["JavaScript", "ES6+", "DOM"],
+    },
   ];
 
   return (
@@ -38,7 +44,7 @@ const Certifications = () => {
           <p className="text-muted-foreground text-lg">Professional achievements and continuous learning</p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {certifications.map((cert, index) => (
             <motion.div
               key={cert.title}
