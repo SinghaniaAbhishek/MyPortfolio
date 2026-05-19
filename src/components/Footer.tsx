@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Heart } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -11,6 +10,13 @@ const Footer = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
+          <div className="flex flex-col items-center justify-center gap-4 mb-4">
+            <img 
+              src="/profileImage.png" 
+              alt="Abhishek Singhania" 
+              className="w-12 h-12 rounded-full object-cover border-2 border-primary/30"
+            />
+          </div>
           <p className="text-muted-foreground flex items-center justify-center gap-2">
             © 2025 Abhishek Singhania 
           </p>
