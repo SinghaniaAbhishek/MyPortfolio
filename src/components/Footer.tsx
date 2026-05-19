@@ -14,7 +14,7 @@ const Footer = () => {
             <img 
               src="/profileImage.png" 
               alt="Abhishek Singhania" 
-              className="w-12 h-12 rounded-full object-cover border-2 border-primary/30"
+              className="w-12 h-12 aspect-square rounded-full object-cover border-2 border-primary/30"
             />
           </div>
           <p className="text-muted-foreground flex items-center justify-center gap-2">

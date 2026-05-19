@@ -42,7 +42,7 @@ const Navbar = () => {
             <img 
               src="/profileImage.png" 
               alt="Abhishek Singhania" 
-              className="w-10 h-10 rounded-full object-cover border-2 border-primary/30"
+              className="w-10 h-10 aspect-square rounded-full object-cover border-2 border-primary/30"
             />
           </motion.a>
 
